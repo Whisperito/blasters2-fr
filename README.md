@@ -14,3 +14,4 @@ Graphistes : EthanCraft, Whisperito.
 Community Manager : N/A.
 
 Serveur Discord : https://discord.gg/Nh65NqRPbF
+Page GameBanana : https://gamebanana.com/wips/76776

@@ -38,60 +38,13 @@
         .button:hover {
             background-color: #EEEEEE;
         }
-        /* Ajout du code CSS pour cacher les textes des boutons par défaut */
-        .text {
-            display: none;
-            position: absolute;
-            top: 50px;
-            font-size: 20px;
-            color: #333333;
-        }
     </style>
 </head>
 <body>
     <h1>Yo-Kai Watch Blasters 2 - Patch FR</h1>
     <img src="https://i.imgur.com/BN5fUde.png" alt="Logo" id="logo">
-    <img src="https://i.imgur.com/Hw5seyR.png" alt="Gamebanana" class="button right" onclick="window.location.href='https://gamebanana.com/wips/76776'" width="10%">
-    <img src="https://i.imgur.com/of9LPkW.png" alt="Discord" class="button left" onclick="window.location.href='https://discord.gg/BkFTpCudWS'" width="10%">
-    <!-- Ajout du code HTML pour afficher les textes des boutons -->
-    <p id="text-gamebanana" class="text right">Page Gamebanana</p>
-    <p id="text-discord" class="text left">Serveur Discord</p>
-    <!-- Ajout du code JavaScript pour afficher les textes des boutons après un délai -->
-    <script>
-        // Définition de la fonction qui affiche un texte
-        function showText(id) {
-            var text = document.getElementById(id);
-            text.style.display = "block";
-        }
-        // Définition de la fonction qui cache un texte
-        function hideText(id) {
-            var text = document.getElementById(id);
-            text.style.display = "none";
-        }
-        // Récupération des boutons et des textes
-        var buttonGamebanana = document.getElementsByClassName("button right")[0];
-        var buttonDiscord = document.getElementsByClassName("button left")[0];
-        var textGamebanana = document.getElementById("text-gamebanana");
-        var textDiscord = document.getElementById("text-discord");
-        // Définition du délai en millisecondes
-        var delay = 1500;
-        // Ajout des écouteurs d'événements sur les boutons
-        buttonGamebanana.addEventListener("mouseover", function() {
-            // Quand on survole le bouton gamebanana, on appelle la fonction showText après le délai
-            setTimeout(showText, delay, "text-gamebanana");
-        });
-        buttonGamebanana.addEventListener("mouseout", function() {
-            // Quand on quitte le bouton gamebanana, on appelle la fonction hideText immédiatement
-            hideText("text-gamebanana");
-        });
-        buttonDiscord.addEventListener("mouseover", function() {
-            // Quand on survole le bouton discord, on appelle la fonction showText après le délai
-            setTimeout(showText, delay, "text-discord");
-        });
-        buttonDiscord.addEventListener("mouseout", function() {
-            // Quand on quitte le bouton discord, on appelle la fonction hideText immédiatement
-            hideText("text-discord");
-        });
-    </script>
+    <!-- Ajout du code HTML pour afficher les infobulles des boutons -->
+    <img src="https://i.imgur.com/Hw5seyR.png" alt="Gamebanana" class="button right" onclick="window.location.href='https://gamebanana.com/wips/76776'" width="10%" title="Page Gamebanana">
+    <img src="https://i.imgur.com/of9LPkW.png" alt="Discord" class="button left" onclick="window.location.href='https://discord.gg/BkFTpCudWS'" width="10%" title="Serveur Discord">
 </body>
 </html>

@@ -12,7 +12,6 @@
             margin-left: auto;
             margin-right: auto;
             width: 25%;
-            /* Changement du code CSS pour que le logo soit à 5 pixels du haut */
             position: relative;
             top: 5px;
         }
@@ -37,15 +36,28 @@
         .button:hover {
             background-color: #EEEEEE;
         }
+        /* Ajout du code CSS pour positionner le bouton de téléchargement */
+        .download {
+            display: inline-block;
+            padding: 10px 20px;
+            border: 1px solid #333333;
+            border-radius: 5px;
+            background-color: #FFFFFF;
+            font-size: 16px;
+            position: absolute;
+            top: 10px;
+            width: 5%;
+            right: calc(50% - (5% / 2));
+        }
     </style>
-    <!-- Ajout du code HTML pour afficher le logo à la place du titre -->
-    <img src="https://i.imgur.com/BN5fUde.png" alt="Logo" id="logo">
 </head>
 <body>
-    <!-- Suppression du code HTML qui affiche le titre -->
-    <!-- <h1>Yo-Kai Watch Blasters 2 - Patch FR</h1> -->
+    <!-- Ajout du code HTML pour afficher le logo qui redirige vers la page index.html -->
+    <img src="https://i.imgur.com/BN5fUde.png" alt="Logo" id="logo" onclick="window.location.href='index.html'">
     <!-- Ajout du code HTML pour afficher les infobulles des boutons -->
     <img src="https://i.imgur.com/k5w3FUG.png" alt="Gamebanana" class="button right" onclick="window.location.href='https://gamebanana.com/wips/76776'" width="10%" title="Page Gamebanana">
     <img src="https://i.imgur.com/of9LPkW.png" alt="Discord" class="button left" onclick="window.location.href='https://discord.gg/BkFTpCudWS'" width="10%" title="Serveur Discord">
+    <!-- Ajout du code HTML pour afficher le bouton de téléchargement -->
+    <img src="https://i.imgur.com/6QZ7XZT.png" alt="Télécharger" class="download" onclick="window.location.href='download.html'" title="Télécharger">
 </body>
 </html>

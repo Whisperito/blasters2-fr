@@ -15,6 +15,10 @@
             position: relative;
             top: 5px;
         }
+        /* Ajout du code CSS pour changer le curseur de la souris au survol du logo */
+        #logo {
+            cursor: pointer; /* Nouvelle propriété */
+        }
         /* Changement du code CSS pour positionner le texte au-dessus du bouton */
         #text {
             font-size: 20px;
@@ -49,7 +53,8 @@
 </head>
 <body>
     <!-- Ajout du code HTML pour afficher le logo qui redirige vers la page index.html -->
-    <img src="https://i.imgur.com/BN5fUde.png" alt="Logo" id="logo" onclick="window.location.href='index.html'">
+    <!-- Ajout de l'attribut title pour afficher l'infobulle "Accueil" -->
+    <img src="https://i.imgur.com/BN5fUde.png" alt="Logo" id="logo" onclick="window.location.href='index.html'" title="Accueil">
     <!-- Ajout du code HTML pour afficher le texte et le bouton "Télécharger" -->
     <p id="text">Version 1.0 :</p>
     <button id="button">Télécharger</button>

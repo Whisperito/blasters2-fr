@@ -1,13 +1,11 @@
 <html>
 <head>
     <title>Yo-Kai Watch Blasters 2 - Patch FR</title>
-    <!-- Changement de l'URL de l'icône d'onglet par le chemin relatif de l'image logo_ywb2.png -->
     <link rel="icon" href="resources/logo_ywb2.png">
     <style>
         body {
             font-family: Arial, sans-serif;
-            /* Changement du code CSS pour mettre une image de fond */
-            background-image: url("resources/page_bg.png"); /* Nouvelle propriété */
+            background-image: url("resources/page_bg.png");
         }
         #logo {
             display: block;
@@ -17,9 +15,8 @@
             position: relative;
             top: 5px;
         }
-        /* Ajout du code CSS pour changer le curseur de la souris au survol du logo */
         #logo {
-            cursor: pointer; /* Nouvelle propriété */
+            cursor: pointer;
         }
         .button {
             display: inline-block;
@@ -38,11 +35,9 @@
         .left {
             left: 10px;
         }
-        /* Ajout du code CSS pour changer la couleur des boutons au survol */
         .button:hover {
             background-color: #EEEEEE;
         }
-        /* Changement du code CSS pour positionner le bouton de téléchargement à côté du bouton gamebanana */
         .download {
             display: inline-block;
             padding: 10px 20px;
@@ -55,23 +50,38 @@
             width: 5%;
             right: 15%;
         }
-        /* Ajout du code CSS pour changer le curseur de la souris au survol des boutons */
         .button, .download {
-            cursor: pointer; /* Nouvelle propriété */
+            cursor: pointer; 
         }
-        /* Ajout du code CSS pour changer la couleur du bouton de téléchargement au survol */
         .download:hover {
-            background-color: #EEEEEE; /* Nouvelle propriété */
+            background-color: #EEEEEE; 
+        }
+        /* Ajout du code CSS pour créer le bouton de crédits */
+        .credits {
+            display: inline-block;
+            padding: 10px 20px;
+            border: 1px solid #333333;
+            border-radius: 5px;
+            background-color: #FFFFFF;
+            font-size: 16px;
+            position: absolute;
+            top: 10px;
+            width: 5%;
+            left: 15%;
+        }
+        /* Ajout du code CSS pour changer la couleur du bouton de crédits au survol */
+        .credits:hover {
+            background-color: #EEEEEE; 
         }
     </style>
 </head>
 <body>
-    <!-- Ajout du code HTML pour afficher le logo qui redirige vers la page index.html -->
     <img src="resources/logo_ywb2.png" alt="Logo" id="logo" onclick="window.location.href='index.html'">
-    <!-- Ajout du code HTML pour afficher les infobulles des boutons -->
     <img src="resources/logo_gb.png" alt="Gamebanana" class="button right" onclick="window.location.href='https://gamebanana.com/wips/76776'" width="10%" title="Page Gamebanana">
     <img src="resources/logo_ds.png" alt="Discord" class="button left" onclick="window.location.href='https://discord.gg/BkFTpCudWS'" width="10%" title="Serveur Discord">
-    <!-- Changement du code HTML pour afficher l'infobulle "Téléchargements" sur le bouton de téléchargement -->
     <img src="resources/logo_dl.png" alt="Télécharger" class="download" onclick="window.location.href='download.html'" title="Téléchargements">
+    <!-- Ajout du code HTML pour afficher le bouton de crédits qui redirige vers la page credits_page.html -->
+    <!-- Ajout de l'attribut title pour afficher l'infobulle "Crédits" -->
+    <button class="credits" onclick="window.location.href='credits_page.html'" title="Crédits">Crédits</button>
 </body>
 </html>

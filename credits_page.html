@@ -18,7 +18,8 @@
         #logo {
             cursor: pointer;
         }
-        #credits {
+        /* Changement du sélecteur CSS pour utiliser une classe au lieu d'un id */
+        .credits {
             font-size: 20px;
             color: #333333;
             position: absolute;
@@ -29,10 +30,11 @@
 </head>
 <body>
     <img src="resources/logo_ywb2.png" alt="Logo" id="logo" onclick="window.location.href='index.html'" title="Accueil">
-    <p id="credits">Ce patch a été réalisé par l'équipe YKWB2. Nous remercions tous les contributeurs qui ont participé à ce projet. Nous espérons que vous apprécierez ce jeu en français.</p>
+    <!-- Changement du code HTML pour utiliser une classe au lieu d'un id -->
+    <p class="credits">Ce patch à été crée par cette équipe, tout en recevant de l'aide des patches italiens et anglais, merci donc à eux. Nous espérons que vous apprécierez ce jeu en français.</p>
     <!-- Ajout du code HTML pour afficher les rôles et les noms -->
-    <p id="credits">Directeur : Pierre Dupont</p>
-    <p id="credits">Traducteurs : Marie Martin, Paul Leroy, Julie Lefebvre</p>
-    <p id="credits">Testeurs : Thomas Petit, Laura Moreau, Kevin Bernard</p>
+    <p class="credits">Directeurs de projet : Lusty, TheWadi, Whisperito.</p>
+    <p class="credits">Développeurs de projet : Lusty, TheWadi, Whisperito, Linktendo, Gasp.</p>
+    <p class="credits">Graphistes : EthanCraft, Whisperito.</p>
 </body>
 </html>

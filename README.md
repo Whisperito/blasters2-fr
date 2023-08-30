@@ -8,10 +8,11 @@ Donc, merci à eux.
 
 Crédits (liste non-exhaustive)
 
-Co-Directeurs : Lusty, TheWadi, Whisperito.
+Directeurs : TheWadi, Whisperito.
 Développeurs : Linktendo, TheWadi, Lusty, Whisperito.
 Graphistes : EthanCraft, Whisperito.
-Community Manager : N/A.
+Community Managers : Whisperito, TheWadi
+
 
 Serveur Discord : https://discord.gg/Nh65NqRPbF
 Page GameBanana : https://gamebanana.com/wips/76776
